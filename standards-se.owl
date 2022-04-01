@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/rdfbones/ext/standards-se#"
+     xml:base="http://w3id.org/rdfbones/ext/standards-se"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:fma="http://purl.org/sig/ont/fma/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:resource="http://semanticscience.org/resource/">
+    <owl:Ontology rdf:about="http://w3id.org/rdfbones/ext/standards-se">
+        <owl:imports rdf:resource="http://w3id.org/rdfbones/ext/standards-si"/>
+        <owl:imports rdf:resource="http://w3id.org/rdfbones/ext/phaleron-si/phaleron-si.owl"/>
+        <owl:imports rdf:resource="http://w3id.org/rdfbones/ontology_resources/core/v0-2/rdfbones.owl"/>
+        <terms:creator>Lukas Bender</terms:creator>
+        <terms:title>Standards&apos; Sex Estimation ontology</terms:title>
+        <rdfs:label>Standards&apos; Sex Estimation ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchClassificationProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchClassificationProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:label>Greater sciatic notch morphological classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphology -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphology">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+        <rdfs:label>Greater sciatic notch assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
+        <rdfs:label>Standards&apos; greater sciatic notch assigned morphology label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScore -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScore">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label>Numeric value of greater sciatic notch assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyScalarTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyScalarTransform">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:label>Greater sciatic notch assigned morphology scalar transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Standards&apos; greater sciatic notch assigned morphology value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable -->
+
+    <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore1">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore2">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore3">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore4">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore5">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

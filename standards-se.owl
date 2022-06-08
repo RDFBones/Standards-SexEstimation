@@ -28,11 +28,87 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000999 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000999"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000963 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000963"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001930 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001930"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
     
 
 
@@ -68,6 +144,14 @@
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScore">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label>Numeric value of greater sciatic notch assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScoreValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScoreValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
     </owl:Class>
     
 
@@ -109,9 +193,9 @@
 
     <!-- http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable -->
 
-    <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable">
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 

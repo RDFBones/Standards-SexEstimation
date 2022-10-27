@@ -19,8 +19,8 @@
         <owl:imports rdf:resource="http://w3id.org/rdfbones/ext/phaleron-si/phaleron-si.owl"/>
         <owl:imports rdf:resource="http://w3id.org/rdfbones/ontology_resources/core/v0-2/rdfbones.owl"/>
         <terms:creator>Lukas Bender</terms:creator>
-        <terms:title>Standards&apos; Sex Estimation ontology</terms:title>
-        <rdfs:label>Standards&apos; Sex Estimation ontology</rdfs:label>
+        <terms:title>Standards&apos; sex estimation ontology</terms:title>
+        <rdfs:label>Standards&apos; sex estimation ontology</rdfs:label>
     </owl:Ontology>
     
 

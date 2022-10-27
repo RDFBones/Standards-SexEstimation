@@ -148,19 +148,11 @@
     
 
 
-    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScoreValueSpecification -->
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericTransform -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScoreValueSpecification">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyScalarTransform -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyScalarTransform">
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericTransform">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <rdfs:label>Greater sciatic notch assigned morphology scalar transformation</rdfs:label>
+        <rdfs:label>Greater sciatic notch assigned morphology numeric transformation</rdfs:label>
     </owl:Class>
     
 
@@ -203,7 +195,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore1">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -212,7 +204,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore2">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -221,7 +213,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore3">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 3</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -230,7 +222,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore4">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 4</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -239,7 +231,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore5">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 5</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

@@ -22,10 +22,10 @@
         <terms:title>Standards&apos; sex estimation ontology</terms:title>
         <rdfs:label>Standards&apos; sex estimation ontology</rdfs:label>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -33,22 +33,22 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -56,16 +56,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000999 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000999"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -73,43 +73,59 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000963 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000963"/>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001930 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001930"/>
-    
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001930">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001933 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001933"/>
+
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
-    
+
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-di/NumberValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phaleron-di/NumberValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+    </owl:Class>
+
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchClassificationProcess -->
@@ -118,16 +134,22 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:label>Greater sciatic notch morphological classification</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphology -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphology">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyValueSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Greater sciatic notch assigned morphology</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel -->
@@ -136,16 +158,31 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
         <rdfs:label>Standards&apos; greater sciatic notch assigned morphology label</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScore -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScore">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScoreValueSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Numeric value of greater sciatic notch assigned morphology</rdfs:label>
     </owl:Class>
-    
+
+
+
+    <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScoreValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScoreValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phaleron-di/NumberValueSpecification"/>
+        <rdfs:label>Numeric value of greater sciatic notch assigned morphology value specification</rdfs:label>
+    </owl:Class>
+
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericTransform -->
@@ -154,7 +191,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <rdfs:label>Greater sciatic notch assigned morphology numeric transformation</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyValueSpecification -->
@@ -169,10 +206,10 @@
         </rdfs:subClassOf>
         <rdfs:label>Standards&apos; greater sciatic notch assigned morphology value specification</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -180,7 +217,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable -->
@@ -197,7 +234,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 1</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore2 -->
@@ -206,7 +243,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 2</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore3 -->
@@ -215,7 +252,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 3</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore4 -->
@@ -224,7 +261,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 4</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore5 -->
@@ -238,4 +275,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-

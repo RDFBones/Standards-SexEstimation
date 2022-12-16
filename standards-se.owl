@@ -20,12 +20,13 @@
         <owl:imports rdf:resource="http://w3id.org/rdfbones/ontology_resources/core/v0-2/rdfbones.owl"/>
         <terms:creator>Lukas Bender</terms:creator>
         <terms:title>Standards&apos; sex estimation ontology</terms:title>
+        <rdfs:comment>This RDFBones ontology extension implements the sex estimation routines as described in the publication &quot;Standards for data collection from human skeletal remains&quot; by Jane E. Buikstra and Douglas H. Ubelaker (1994).</rdfs:comment>
         <rdfs:label>Standards&apos; sex estimation ontology</rdfs:label>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -33,22 +34,30 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
 
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -56,16 +65,22 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000999 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000999"/>
+    
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001938 -->
 
-    <!--
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001938"/>
+    
+
+
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -73,31 +88,31 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000963 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000963"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001930 -->
@@ -105,19 +120,19 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001930">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001933 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001933"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/phaleron-di/NumberValueSpecification -->
@@ -125,16 +140,17 @@
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phaleron-di/NumberValueSpecification">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchClassificationProcess -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchClassificationProcess">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115>An assay that assigns a specific pre-defined morphology type to an anatomical region of interest of the pelvic girdle of a specimen according to the methods described in the publication &quot;Standards for data collection from human skeletal remains&quot; by Jane E. Buikstra and Douglas H. Ubelaker (1994).</obo:IAO_0000115>
         <rdfs:label>Greater sciatic notch morphological classification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphology -->
@@ -149,7 +165,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Greater sciatic notch assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel -->
@@ -158,7 +174,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
         <rdfs:label>Standards&apos; greater sciatic notch assigned morphology label</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScore -->
@@ -173,7 +189,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Numeric value of greater sciatic notch assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericScoreValueSpecification -->
@@ -182,16 +198,23 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phaleron-di/NumberValueSpecification"/>
         <rdfs:label>Numeric value of greater sciatic notch assigned morphology value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericTransform -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyNumericTransform">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <obo:IAO_0000115>Assigns each morphology type a corresponding numeric value. The values are as follows:
+Morphology type 1 = 1
+Morphology type 2 = 2
+Morphology type 3 = 3
+Morphology type 4 = 4
+Morphology type 5 = 5
+Unobservable = no value</obo:IAO_0000115>
         <rdfs:label>Greater sciatic notch assigned morphology numeric transformation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyValueSpecification -->
@@ -206,10 +229,10 @@
         </rdfs:subClassOf>
         <rdfs:label>Standards&apos; greater sciatic notch assigned morphology value specification</rdfs:label>
     </owl:Class>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -217,7 +240,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable -->
@@ -234,7 +257,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 1</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore2 -->
@@ -243,7 +266,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 2</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore3 -->
@@ -252,7 +275,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 3</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore4 -->
@@ -261,7 +284,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greater sciatic notch morphology type 4</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/standards-se/GreaterSciaticNotchScore5 -->
@@ -275,3 +298,4 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -15,9 +15,6 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:resource="http://semanticscience.org/resource/">
     <owl:Ontology rdf:about="http://w3id.org/rdfbones/ext/standards-se">
-        <owl:imports rdf:resource="http://w3id.org/rdfbones/ext/standards-si"/>
-        <owl:imports rdf:resource="http://w3id.org/rdfbones/ext/phaleron-si/phaleron-si.owl"/>
-        <owl:imports rdf:resource="http://w3id.org/rdfbones/ontology_resources/core/v0-2/rdfbones.owl"/>
         <terms:creator>Lukas Bender</terms:creator>
         <terms:title>Standards&apos; sex estimation ontology</terms:title>
         <rdfs:comment>This RDFBones ontology extension implements the sex estimation routines as described in the publication &quot;Standards for data collection from human skeletal remains&quot; by Jane E. Buikstra and Douglas H. Ubelaker (1994).</rdfs:comment>
